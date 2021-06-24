@@ -76,21 +76,20 @@ p {
 }
 
 .menu {
-    list-style: none;
+    width: 100%;
     font-family: fantasy;
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 0px;
+    margin-top: 0px;
     z-index: 10000;
-    cursor: pointer;
+    background: white;
 }
 
 .links {
-    float: left;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
+
+    display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
     font-family: inherit;
     font-size: 20px;
     color: crimson;
@@ -98,7 +97,9 @@ p {
 }
 
 .links:hover {
-    background-color: deepskyblue;
+    font-size: 25px;
+    text-decoration: underline;
+
 }
 
 html {
@@ -108,9 +109,35 @@ html {
 
 a {
     text-decoration: none;
-
+    color: crimson;
+    text-shadow: 2px 2px grey;
 }
 
 .article:hover {
     color: fuchsia;
+}
+
+#writing a {
+    text-shadow: none !important;
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+.contact1 a {
+    color: white;
+    text-shadow: none;
+
+}
+
+#contacts {
+    background: firebrick;
+
+}
+
+#contacts iframe {
+    width: 100%
+}
+
+.contact1 h3 {
+    display: inline;
 }
